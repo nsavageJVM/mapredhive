@@ -26,6 +26,22 @@ public class HiveRunner {
     private static final String test_data_input_directory  =  "./testData";
     private static final String test_data_output_directory  =  "./testDataOut";
 
+    static {
+        try{
+            Class.forName("org.apache.hadoop.hive.ql.exec.mr.ExecDriver");
+            System.out.println("found exec driver !!!!!!!!!!!!!!!!");
+        }
+        catch(Throwable t) {
+            throw new RuntimeException(t);
+        }
+        try{
+            //Class.forName("org.apache.hadoop.hive.ql.exec.mr.ExecDriver");
+        }
+        catch(Throwable t) {
+            throw new RuntimeException(t);
+        }
+    }
+
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
         int records = 10;

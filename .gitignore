@@ -1,0 +1,15 @@
+hadoop-1.2.1/*
+.settings
+.springBeans
+.project
+.idea
+target
+*.class
+*.jar
+*.iml
+*part-r*
+*SUCCESS*
+.classpath
+derby.log
+metastore_db
+pre_process/*

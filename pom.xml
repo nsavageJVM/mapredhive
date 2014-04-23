@@ -112,6 +112,8 @@
     </dependency>
 
 
+
+
     <!-- hadoop -->
     <dependency>
         <groupId>org.apache.hadoop</groupId>
